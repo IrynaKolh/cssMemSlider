@@ -11,15 +11,36 @@
   <header></header>
   <main>
     <div class="container">
-      <div class="slider"></div>
-      <div class="content">
-        <p class="quotes">Этот мир несовершенен, но он единственный, который у нас есть.</p>
-        <div class="dots">
-          <div class="dot active-dot"></div>
-          <div class="dot"></div>
-          <div class="dot"></div>
-          <div class="dot"></div>
+      <div class="slide-container">
+        <div class="slider animation">
+          <img src="./asserts/1.jpg" alt="iron-man">          
         </div>
+        <div class="slider animation">
+          <img src="./asserts/2.jpg" alt="capitan-america">          
+        </div>
+        <div class="slider animation">
+          <img src="./asserts/3.jpg" alt="capitan-marvel">         
+        </div>
+        <div class="slider animation">
+          <img src="./asserts/4.jpg" alt="halk">         
+        </div>
+      </div>
+      <div class="controls">
+        <p class="quotes"></p>
+        <div class="dots">
+          <div class="wrap">
+            <div class="dot" onclick="currentSlide(1)"></div>
+          </div>
+          <div class="wrap">
+            <div class="dot" onclick="currentSlide(2)"></div>
+          </div>
+          <div class="wrap">
+            <div class="dot" onclick="currentSlide(3)"></div>
+          </div>
+          <div class="wrap">
+            <div class="dot" onclick="currentSlide(4)"></div>
+          </div> 
+       </div>
       </div>
     </div>
   </main>
