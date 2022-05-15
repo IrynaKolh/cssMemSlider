@@ -1,4 +1,4 @@
-let text = ['Этот мир несовершенен, но он единственный, который у нас есть.', 'Прежде чем мы начнем, кто-нибудь хочет выйти?', 'Мне нечего вам доказывать', '— У меня есть армия. — А у нас Халк!'];
+let text = ['Этот мир несовершенен, но он единственный, который у нас есть.', 'Прежде чем мы начнем, кто-нибудь хочет выйти?', 'Мне нечего вам доказывать!', '— У меня есть армия. — А у нас Халк!'];
 
 
 let slideIndex = 1;
@@ -26,5 +26,14 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active-dot";
-  document.querySelector('.quotes').textContent = text[n-1];
+  let quete = document.querySelector('p');
+  quete.classList.remove('animation');
+  document.querySelector('.quotes').textContent = text[n-1];  
+  
+  setTimeout(function(){
+     quete.classList.add('animation');    
+    },1 
+  );
+
+
 } 

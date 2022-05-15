@@ -9,7 +9,7 @@ body {
 }
 
 main {
-  width: 90%;
+  width: 80%;
   margin: 2rem auto;
   /* height: 100%; */
 }
@@ -54,10 +54,6 @@ p {
   cursor: pointer;
 } 
 
-/* .wrap:hover {
-  background-color: lightgrey;
-} */
-
 .dot {
   width: 30px;
   height: 30px;
@@ -80,7 +76,8 @@ p {
 
 .animation {
   animation-name: slidein;
-  animation-duration: 1.5s;
+  animation-duration: 2s;
+  animation-timing-function: ease-out; 
 }
 
 @keyframes slidein {
@@ -91,6 +88,8 @@ p {
     transform: translateX(0);
   }
 }
+
+
 
 @media (max-width: 768px) {
   body {
@@ -119,7 +118,7 @@ p {
 
   p{
     margin:  0;
-    text-align: center;
+    
     font-size: 1.5rem;
     
   }
