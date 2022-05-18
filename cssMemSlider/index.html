@@ -12,40 +12,50 @@
   <header></header>
   <main>
     <div class="container">
-      <div class="slide-container">
-        <div class="slider animation">
-          <img src="./assets/1.jpg" alt="iron-man">          
-        </div>
-        <div class="slider animation">
-          <img src="./assets/2.jpg" alt="capitan-america">          
-        </div>
-        <div class="slider animation">
-          <img src="./assets/3.jpg" alt="capitan-marvel">         
-        </div>
-        <div class="slider animation">
-          <img src="./assets/4.jpg" alt="halk">         
-        </div>
-      </div>
-      <div class="controls">
-        <p class="quotes"></p>
-        <div class="dots">
-          <div class="wrap" onclick="currentSlide(1)">
-            <div class="dot"></div>
+        <input checked type="radio" name="slider" id="switch1">
+        <input type="radio" name="slider" id="switch2">
+        <input type="radio" name="slider" id="switch3">
+        <input type="radio" name="slider" id="switch4">
+        <div class="slider">
+          <div class="slider-container">
+            <div class="images img1">
+              <img src="./assets/1.jpg" alt="iron-man">              
+            </div>
+            <div class="images img2">
+              <img src="./assets/2.jpg" alt="capitan-america">             
+            </div>
+            <div class="images img3">
+              <img src="./assets/3.jpg" alt="capitan-marvel">              
+            </div>
+            <div class="images img4">
+              <img src="./assets/4.jpg" alt="halk">            
+            </div>
           </div>
-          <div class="wrap" onclick="currentSlide(2)">
-            <div class="dot"></div>
+        </div>
+        <div class="text-content">
+          <div class="text-wraper">
+            <div class="text text1">'Этот мир несовершенен, <br> но он единственный, который у нас есть.'</div>
+            <div class="text text2">'Прежде чем мы начнем, кто-нибудь хочет выйти?'</div>
+            <div class="text text3">'Мне нечего вам доказывать!'</div>
+            <div class="text text4">'— У меня есть армия. — А у нас Халк!'</div>
           </div>
-          <div class="wrap"  onclick="currentSlide(3)">
-            <div class="dot"></div>
-          </div>
-          <div class="wrap" onclick="currentSlide(4)">
-            <div class="dot"></div>
-          </div> 
-       </div>
-      </div>
+        </div>
+        <div class="controls">
+          <label for="switch1">
+            <span class="control-item"></span>
+          </label>
+          <label for="switch2">
+            <span class="control-item"></span>
+          </label>
+          <label for="switch3">
+            <span class="control-item"></span>
+          </label>
+          <label for="switch4">
+            <span class="control-item"></span>
+          </label>
+        </div>       
     </div>
   </main>
-  <footer></footer>
-  <script src="./main.js"></script>
+  <footer></footer>  
 </body>
 </html>
